@@ -1,11 +1,12 @@
 <!-- src/components/Footer.svelte -->
 <script lang="ts">
+    let currentYear: number = new Date().getFullYear();
     let name: string = "Yutak";
 </script>
 
 <footer>
     <div class="container">
-      <p>&copy; 2024 {name}.</p>
+      <p>&copy; {currentYear} {name}.</p>
       <nav>
         <ul>
           <li><a href="/">Home</a></li>
